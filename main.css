@@ -1,13 +1,13 @@
-body{
+body {
     background-color: lightgreen;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
 }
 
-.card{
+.card {
     background-color: white;
     width: 400px;
     height: 100%;
@@ -16,42 +16,30 @@ main{
     flex-direction: column;
 
 }
-.card>p:nth-of-type(1){
-    align-content: flex-start;
-}
-.card>.suit:nth-of-type(1){
-    color: red;
-    padding: 0px 20px;
-    font-size: 50px;
-    margin-top: -50px;
 
+.suit:nth-of-type(1){
+    color: red;
+    font-size: 50px;
 }
-.card>.suit:nth-of-type(2){
+.value:nth-of-type(2){
+    margin-top: -10px;
+}
+.suit:nth-of-type(3){
     color: red;
     align-self: center;
     font-size: 100px;
 }
-.card>.suit:nth-of-type(3){
+.value.suit:nth-of-type(6){
+    align-self: flex-end;
     color: red;
-    padding: 0px 20px 0px 0px;
-    margin-bottom: -50px;
+}
+.suit:nth-of-type(5){
+    color: red;
     align-self: flex-end;
     font-size: 50px;
-    transform: scale(1, -1);
 }
 
-.card>p:nth-of-type(1){
-    align-self: flex-start;
-    margin-top: -50px;
-    margin-left: 30px;
-}
-.card>p:nth-of-type(2){
-    align-self: flex-end;
-    margin-right: 30px;
-    margin-bottom: -50px;
-}
-
-footer{
+footer {
     display: flex;
     justify-content: center;
     margin-top: 100px;
