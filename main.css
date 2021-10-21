@@ -29,7 +29,7 @@ main {
     align-self: center;
     font-size: 100px;
 }
-.value.suit:nth-of-type(6){
+.value.suit:nth-of-type(3){
     align-self: flex-end;
     color: red;
 }
