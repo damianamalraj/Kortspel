@@ -69,3 +69,5 @@ if (currentCard > nextCard) {
 if (currentCard < nextCard) {
 
 }
+
+yu
