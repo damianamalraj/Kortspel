@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
+    <body>
+        <header>
+            <p class="points">Poäng: 0</p>
+            <p class="tries">Försök kvar: 3</p>
+        </header>
 
-<body>
-    <header>
-        <p class="points">Poäng: 0</p>
-        <p class="tries">Försök kvar: 3</p>
-    </header>
+        <main>
+            <section class="card">
+                <p class="suit">&hearts;</p>
+                <p class="value">10</p>
 
-    <main>
-        <section class="card">
+                <p class="suit">&hearts;</p>
 
-            <p class="suit">&hearts;</p>
-            <p class="value">10</p>
+                <p class="value">10</p>
+                <p class="suit">&hearts;</p>
+            </section>
+            <p class="klar">Kort kvar 52</p>
+        </main>
 
-            <p class="suit">&hearts;</p>
+        <footer>
+            <button class="BLower">Nästa kort är <strong>lägre</strong></button>
+            <button class="BEqual">
+                Nästa kort är <strong>likvärdig</strong>
+            </button>
+            <button class="BHigher">
+                Nästa kort är <strong>högre</strong>
+            </button>
+        </footer>
 
-            <p class="value">10</p>
-            <p class="suit">&hearts;</p>
-
-        </section>
-    </main>
-
-    <footer>
-        <button class="BLower">Nästa kort är <strong>lägre</strong></button>
-        <button class="BEqual">Nästa kort är <strong>likvärdig</strong></button>
-        <button class="BHigher">Nästa kort är <strong>högre</strong></button>
-    </footer>
-
-    <script src="main.js"></script>
-</body>
-
+        <script src="main.js"></script>
+    </body>
 </html>
