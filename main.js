@@ -32,19 +32,17 @@ const buttonHigher = document.querySelector(".BHigher");
 
 let point = 0;
 let trie = 3;
+let v = document.querySelector(".value");
 
 buttonLower.addEventListener("click", (Event) => {
     let randomNum = Math.floor(Math.random() * Cards.length);
 
-    if (trie != 0) {
-        if (value.innerText > Cards[randomNum].number) {
-            point++;
-            points.innerHTML = `Poäng: ${point}`;
-        } else {
-            trie--;
-            tries.innerHTML = `Försök kvar: ${trie}`;
-        }
+    if (v.innerText < Cards[randomNum].number) {
+        point++;
+        points.innerHTML = `Poäng: ${point}`;
     } else {
+        trie--;
+        tries.innerHTML = `Försök kvar: ${trie}`;
     }
 
     for (i = 0; i < value.length; i++) {
@@ -57,19 +55,17 @@ buttonLower.addEventListener("click", (Event) => {
     Cards.splice(randomNum, 1);
     cardsLeft.innerText = Cards.length;
 });
+console.log(point);
 
 buttonEqual.addEventListener("click", (Event) => {
     let randomNum = Math.floor(Math.random() * Cards.length);
 
-    if (trie != 0) {
-        if (value.innerText == Cards[randomNum].number) {
-            point++;
-            points.innerHTML = `Poäng: ${point}`;
-        } else {
-            trie--;
-            tries.innerHTML = `Försök kvar: ${trie}`;
-        }
+    if (v.innerText == Cards[randomNum].number) {
+        point++;
+        points.innerHTML = `Poäng: ${point}`;
     } else {
+        trie--;
+        tries.innerHTML = `Försök kvar: ${trie}`;
     }
 
     for (i = 0; i < value.length; i++) {
@@ -86,15 +82,12 @@ buttonEqual.addEventListener("click", (Event) => {
 buttonHigher.addEventListener("click", (Event) => {
     let randomNum = Math.floor(Math.random() * Cards.length);
 
-    if (trie != 0) {
-        if (value.innerText < Cards[randomNum].number) {
-            point++;
-            points.innerHTML = `Poäng: ${point}`;
-        } else {
-            trie--;
-            tries.innerHTML = `Försök kvar: ${trie}`;
-        }
+    if (v.innerText < Cards[randomNum].number) {
+        point++;
+        points.innerHTML = `Poäng: ${point}`;
     } else {
+        trie--;
+        tries.innerHTML = `Försök kvar: ${trie}`;
     }
 
     for (i = 0; i < value.length; i++) {
