@@ -1,0 +1,52 @@
+body{
+    background-color: lightgreen;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.jeff>p:nth-of-type(1){
+    align-content: flex-start;
+}
+.jeff>.suit:nth-of-type(1){
+    color: red;
+    padding: 0px 20px;
+    font-size: 50px;
+    margin-top: -50px;
+
+}
+.jeff>.suit:nth-of-type(2){
+    color: red;
+    font-size: 100px;
+}
+.jeff>.suit:nth-of-type(2){
+    color: red;
+    padding: 0px 20px 0px 0px;
+    margin-bottom: -50px;
+    font-size: 50px;
+    transform: scale(1, -1);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border: solid 2px black;
+    width: 412px;
+    margin: 100px auto;
+}
+
+footer>button {
+    background-color: lightgreen;
+}
