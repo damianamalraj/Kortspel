@@ -1,73 +1,71 @@
 let CHearts = [{
-        suit: "Heart",
-        number: "1"
+        suit: "&heart",
+        number: 1
     },
     {
-        suit: "Heart",
-        number: "2"
+        suit: "&heart",
+        number: 2
     },
     {
-        suit: "Heart",
-        number: "3"
+        suit: "&heart",
+        number: 3
     },
     {
-        suit: "Heart",
-        number: "4"
+        suit: "&heart",
+        number: 4
     },
     {
-        suit: "Heart",
-        number: "5"
+        suit: "&heart",
+        number: 5
     },
     {
-        suit: "Heart",
-        number: "6"
+        suit: "&heart",
+        number: 6
     },
     {
-        suit: "Heart",
-        number: "7"
+        suit: "&heart",
+        number: 7
     },
     {
-        suit: "Heart",
-        number: "8"
+        suit: "&heart",
+        number: 8
     },
     {
-        suit: "Heart",
-        number: "9"
+        suit: "&heart",
+        number: 9
     },
     {
-        suit: "Heart",
-        number: "10"
+        suit: "&heart",
+        number: 10
     },
     {
-        suit: "Heart",
-        number: "11"
+        suit: "&heart",
+        number: 11
     },
     {
-        suit: "Heart",
-        number: "12"
+        suit: "&heart",
+        number: 12
     },
     {
-        suit: "Heart",
-        number: "13"
-    }
-]
-let CSpades = [
-    {
-        suit: "Spade",
-        number: ""
+        suit: "&heart",
+        number: 13
     }
 ]
 
-if (currentCard == nextCard){
+const points = document.querySelector(".points");
+const tries = document.querySelector(".tries");
 
-}
+const value = document.querySelector(".value");
+const suit = document.querySelectorAll(".suit");
 
-if (currentCard > nextCard) {
+const buttonLower = document.querySelector(".BLower");
+const buttonEqual = document.querySelector(".BEqual");
+const buttonHigher = document.querySelector(".BHigher");
 
-}
+console.log(CHearts[Math.floor(Math.random()*CHearts.length)])
 
-if (currentCard < nextCard) {
+// buttonLower.addEventListener("click", Event => {console.log(CHearts[Math.floor(Math.random()*CHearts.length)])})
+// buttonEqual.addEventListener("click", Event => {console.log(CHearts[Math.floor(Math.random()*CHearts.length)])})
+// buttonHigher.addEventListener("click", Event => {console.log(CHearts[Math.floor(Math.random()*CHearts.length)])})
 
-}
-
-yu
+buttonLower.addEventListener("click", Event => {value[i].innerText = CHearts[Math.floor(Math.random()*CHearts.length)].number})
